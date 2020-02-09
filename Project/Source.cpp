@@ -4,7 +4,7 @@ using namespace std;
 class Tovar_Cost
 {
 private:
-	float first;//должны совпадать поля first second
+	float first;//должны совпадать поля first second1
 	int second;
 public:
 	Tovar_Cost()
