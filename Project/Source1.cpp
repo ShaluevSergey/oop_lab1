@@ -1,3 +1,4 @@
+//без сеттеров
 #include <iostream>
 using namespace std;
 
@@ -9,27 +10,14 @@ private:
 public:
 	Tovar_Cost()
 	{
-	}
-	void set_cost(float cost_t)
-	{
-		first = cost_t;
-	}
 
-	void set_amount(int amt)
-	{
-		second = amt;
-	}
-
-	float cost(float first, int second)
-	{
-		return first * second;
 	}
 
 	void Display()//Вывод проверки полей класса +
 	{
 		cout << "Цена: " << first << endl;
 		cout << "Колличество: " << second << endl;
-		cout << "Цена всех продуктов: " << cost(first,second);
+		cout << "Цена всех продуктов: " << first * second;
 	}
 
 	float Init(float first, int second)//Проверка на правильность без "кор" +
@@ -76,8 +64,6 @@ int main()
 	int amt = 0;
 	Tovar_Cost  Product;
 
-	Product.set_cost(cost_t);
-	Product.set_amount(amt);
 	Product.Read(cost_t, amt);
 	Product.Display();
 
